@@ -7,8 +7,7 @@ public abstract class Publicacao {
 	protected String autor;
 	protected int quantidadeDisponivel;
 	protected String tipo;
-	public int matriculaReservada;
-	public boolean acessivelNoAcervo;
+	protected int matriculaReservada;//serve pra salvar a matricula de quem reservou a publicacao
 	
 	public Publicacao(String titulo, int ano, String autor, int quantidadeDisponivel) {
 		super();
@@ -16,7 +15,6 @@ public abstract class Publicacao {
 		this.ano = ano;
 		this.autor = autor;
 		this.quantidadeDisponivel = quantidadeDisponivel;
-		this.acessivelNoAcervo = false;
 	}
 	
 	

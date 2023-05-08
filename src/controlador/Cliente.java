@@ -6,16 +6,14 @@ public abstract class Cliente implements ValidacaoEmprestimo{
 	protected String nome;
 	protected int tps;
 	protected String tipo;
-	public int quantidadeEmprestimo;
-	public int id;
-	public boolean cadastado;
+	protected int quantidadeEmprestimo;
+	protected int id;//identificar se é aluno=1 professor=2 ou servidor=3
 	
 	public Cliente(int matricula, String nome) {
 		super();
 		this.matricula = matricula;
 		this.nome = nome;
 		this.tps=0;
-		this.cadastado = false;
 	}
 	
 	
